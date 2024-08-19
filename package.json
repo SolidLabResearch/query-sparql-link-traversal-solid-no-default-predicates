@@ -1,0 +1,41 @@
+{
+  "name": "query-sparql-link-traversal-solid-no-default-predicates",
+  "version": "0.0.1",
+  "description": "A @comunica/query-sparql-link-traversal-solid, configured to not follow any default predicates.",
+  "author": "Martin Vanbrabant",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolidLabResearch/query-sparql-link-traversal-solid-no-default-predicates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SolidLabResearch/query-sparql-link-traversal-solid-no-default-predicates/issues"
+  },
+  "homepage": "https://github.com/SolidLabResearch/query-sparql-link-traversal-solid-no-default-predicates#readme",
+  "lsd:module": true,
+  "scripts": {
+    "build:engine": "comunica-compile-config config/config-default.json > engine-default.js",
+    "build:lib": "tsc",
+    "build": "npm run build:lib && npm run build:engine",
+    "prepare": "npm run build"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index",
+  "browser": {
+    "./lib/index.js": "./lib/index-browser.js",
+    "./lib/index.js.map": "./lib/index-browser.js.map"
+  },
+  "files": [
+    "config",
+    "lib/**/*.d.ts",
+    "lib/**/*.js",
+    "lib/**/*.js.map",
+    "engine-default.js"
+  ],
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@comunica/query-sparql-link-traversal-solid": "^0.5.0"
+  }
+}
