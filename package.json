@@ -1,6 +1,6 @@
 {
   "name": "query-sparql-link-traversal-solid-no-default-predicates",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A @comunica/query-sparql-link-traversal-solid, configured to not follow any default predicates.",
   "author": "Martin Vanbrabant",
   "license": "MIT",
@@ -31,6 +31,15 @@
     "lib/**/*.js",
     "lib/**/*.js.map",
     "engine-default.js"
+  ],
+  "keywords": [
+    "comunica",
+    "sparql",
+    "engine",
+    "query",
+    "solid",
+    "link-traversal",
+    "no default predicates"
   ],
   "devDependencies": {
     "typescript": "^5.5.4"
