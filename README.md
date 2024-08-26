@@ -3,7 +3,10 @@
 A [@comunica/query-sparql-link-traversal-solid](https://www.npmjs.com/package/@comunica/query-sparql-link-traversal-solid) engine,
 configured to **not follow any default predicates** (such as `http://www.w3.org/2000/01/rdf-schema#seeAlso`).
 
-It allows you to use an engine with this behavior, without the need to provide your own configuration file and even apply it in a browser environment.
+It allows you
+
+* to use an engine with this behavior, without the need to provide your own configuration file
+* and even to apply it in a browser environment.
 
 To use it, see below an example code snippet.
 
