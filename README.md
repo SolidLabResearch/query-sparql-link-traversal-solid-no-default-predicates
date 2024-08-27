@@ -51,10 +51,9 @@ console.log(datasources);
 Replacing the top 3 lines in above example with:
 
 ```javascript
-// This only works in node (supposing ./config.json has the same contents as query-sparql-link-traversal-solid-no-default-predicates's engine-default.js),
-// because QueryEngineFactory is not available in browser environments
+// This only works in node (suppose ./config.json has the same contents as query-sparql-link-traversal-solid-no-default-predicates's engine-default.js).
 import { QueryEngineFactory } from '@comunica/query-sparql-link-traversal-solid';
 const engine = await new QueryEngineFactory().create({ configPath: './config.json', });
 ```
 
-would not work in a browser environment.
+would not work in a browser environment, because `QueryEngineFactory` is not available there.
