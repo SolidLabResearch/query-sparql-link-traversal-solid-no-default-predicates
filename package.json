@@ -1,6 +1,6 @@
 {
   "name": "query-sparql-link-traversal-solid-no-default-predicates",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A @comunica/query-sparql-link-traversal-solid, configured to not follow any default predicates.",
   "author": "Martin Vanbrabant",
   "license": "MIT",
